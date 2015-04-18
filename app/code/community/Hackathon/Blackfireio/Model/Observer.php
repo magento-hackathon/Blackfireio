@@ -34,7 +34,6 @@ class Hackathon_Blackfireio_Model_Observer
      */
     public function resourceGetTablename(Varien_Event_Observer $o)
     {
-        die('foo1');
         $this->_turnOffProbe();
         return $this;
     }
@@ -50,6 +49,5 @@ class Hackathon_Blackfireio_Model_Observer
     {
         $probe = BlackfireProbe::getMainInstance();
         $probe->discard();
-die('foob');
     }
 }
