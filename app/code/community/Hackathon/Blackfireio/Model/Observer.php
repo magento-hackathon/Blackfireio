@@ -34,7 +34,7 @@ class Hackathon_Blackfireio_Model_Observer
      */
     public function resourceGetTablename(Varien_Event_Observer $o)
     {
-        $this->_turnOffProbe();
+        $this->_turnOffProbe($o);
         return $this;
     }
 
