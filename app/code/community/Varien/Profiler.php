@@ -79,6 +79,7 @@ class Varien_Profiler
         self::$_timers[$timerName]['count'] ++;
 
         $probeName = filter_input(INPUT_GET, 'probe', FILTER_SANITIZE_STRING);
+        $probeName = rawurldecode($probeName);
         if (in_array($timerName, explode(',',$probeName))) {
             $probe = BlackfireProbe::getMainInstance();
             $probe->enable();
@@ -111,6 +112,7 @@ class Varien_Profiler
         }
 
         $probeName = filter_input(INPUT_GET, 'probe', FILTER_SANITIZE_STRING);
+        $probeName = rawurldecode($probeName);
         if (in_array($timerName, explode(',',$probeName))) {
             $probe = BlackfireProbe::getMainInstance();
             $probe->disable();
