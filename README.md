@@ -10,5 +10,6 @@ Original authors: @sandermangel, @joshuaswarren, @kab8609
 - Use Aop for better controle on what to probe
 
 ##Resources
-Test the Blackfire.io integration on a ready to go Vagrant box
-https://github.com/magento-hackathon/BlackfireMagentoVagrant 
+Test the Blackfire.io integration on a ready to go [Vagrant box][1].
+
+[1]: https://github.com/magento-hackathon/BlackfireMagentoVagrant 
