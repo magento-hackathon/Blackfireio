@@ -1,7 +1,14 @@
 #Hackathon_Blackfireio
-
 Original authors: @sandermangel, @joshuaswarren, @kab8609
 
-Todo - write readme / documentation
+##Usage
+- Turn on Varien_Profiler
+- http://example.com?probe=[varienprofiler timer name],[varienprofiler timer name]
 
-See also: https://github.com/magento-hackathon/BlackfireMagentoVagrant 
+##Roadmap
+- Expand documentation
+- Use Aop for better controle on what to probe
+
+##Resources
+Test the Blackfire.io integration on a ready to go Vagrant box
+https://github.com/magento-hackathon/BlackfireMagentoVagrant 
