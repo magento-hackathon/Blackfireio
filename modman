@@ -1,2 +1,3 @@
 app/code/community/Hackathon/Blackfireio
 app/etc/modules/Hackathon_Blackfireio.xml
+app/code/community/Varien/Profiler.php

@@ -21,9 +21,6 @@
         <Hackathon_Blackfireio>
             <active>true</active>
             <codePool>community</codePool>
-            <depends>
-                <Danslo_Aop/>
-            </depends>
         </Hackathon_Blackfireio>
     </modules>
 </config>

@@ -34,8 +34,5 @@
                 </observers>
             </resource_get_tablename>
         </events>
-        <aspects>
-            <hackathon_blackfireio_is_enabled>Hackathon_Blackfireio_Aspect_Isenabled</hackathon_blackfireio_is_enabled>
-        </aspects>
     </global>
 </config>
