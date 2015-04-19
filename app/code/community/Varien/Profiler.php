@@ -39,6 +39,10 @@ class Varien_Profiler
 
     public static function enable()
     {
+        $probe = BlackfireProbe::getMainInstance();
+        $probe->discard();
+        $probe->disable();
+
         self::$_enabled = true;
         self::$_memory_get_usage = function_exists('memory_get_usage');
     }
