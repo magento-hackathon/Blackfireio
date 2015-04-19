@@ -77,6 +77,12 @@ class Varien_Profiler
         }
         self::$_timers[$timerName]['start'] = microtime(true);
         self::$_timers[$timerName]['count'] ++;
+
+        $probeName = filter_input(INPUT_GET, 'probe', FILTER_SANITIZE_STRING);
+        if (in_array($timerName, explode(','$probeName))) {
+            $probe = BlackfireProbe::getMainInstance();
+            $probe->enable();
+        }
     }
 
     public static function start($timerName)
@@ -102,6 +108,12 @@ class Varien_Profiler
 	            self::$_timers[$timerName]['realmem'] += memory_get_usage(true)-self::$_timers[$timerName]['realmem_start'];
     	        self::$_timers[$timerName]['emalloc'] += memory_get_usage()-self::$_timers[$timerName]['emalloc_start'];
             }
+        }
+
+        $probeName = filter_input(INPUT_GET, 'probe', FILTER_SANITIZE_STRING);
+        if (in_array($timerName, explode(','$probeName))) {
+            $probe = BlackfireProbe::getMainInstance();
+            $probe->disable();
         }
     }
 

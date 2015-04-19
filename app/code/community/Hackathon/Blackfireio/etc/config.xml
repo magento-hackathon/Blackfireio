@@ -22,17 +22,4 @@
             <version>1.0.0</version>
         </Hackathon_Blackfireio>
     </modules>
-    <global>
-        <events>
-            <resource_get_tablename>
-                <observers>
-                    <hackathon_blackfireio_resource_get_tablename>
-                        <type>singleton</type>
-                        <class>Hackathon_Blackfireio_Model_Observer</class>
-                        <method>resourceGetTablename</method>
-                    </hackathon_blackfireio_resource_get_tablename>
-                </observers>
-            </resource_get_tablename>
-        </events>
-    </global>
 </config>
